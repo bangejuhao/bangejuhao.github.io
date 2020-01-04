@@ -248,8 +248,8 @@
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye">
-      互联网公司规模(游戏行业)
+    <a class="post-title-link" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-di-yu-fen-bu">
+      互联网公司地域分布
     </a>
   </h1>
   <div class="post-meta">
@@ -262,12 +262,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-clock-o"></i>
-      <span>2分钟</span>
+      <span>3分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>220<span class="pc-show">字数</span></span>
+      <span>362<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
@@ -281,11 +281,11 @@
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 </head>
 <body>
-    <div id="1b28c5790ff64bd0b6cdab0d1d8684a9" class="chart-container" style="width:300px; height:300px;"></div>
+    <div id="b84fbdb076e5491c86bbac26c83676a1" class="chart-container" style="width:300px; height:300px;"></div>
     <script>
-        var chart_1b28c5790ff64bd0b6cdab0d1d8684a9 = echarts.init(
-            document.getElementById('1b28c5790ff64bd0b6cdab0d1d8684a9'), 'white', {renderer: 'canvas'});
-        var option_1b28c5790ff64bd0b6cdab0d1d8684a9 = {
+        var chart_b84fbdb076e5491c86bbac26c83676a1 = echarts.init(
+            document.getElementById('b84fbdb076e5491c86bbac26c83676a1'), 'white', {renderer: 'canvas'});
+        var option_b84fbdb076e5491c86bbac26c83676a1 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -322,47 +322,83 @@
     ],
     "series": [
         {
-            "type": "pie",
-            "clockwise": true,
+            "type": "bar",
+            "name": "IT\u670d\u52a1 ",
             "data": [
                 {
-                    "name": "10000\u4ee5\u4e0a",
-                    "value": 194
+                    "value": 422,
+                    "percent": 0.25575757575757574
                 },
                 {
-                    "name": "5000-10000\u4eba",
-                    "value": 137
+                    "value": 213,
+                    "percent": 0.1290909090909091
                 },
                 {
-                    "name": "2000-5000\u4eba",
-                    "value": 175
+                    "value": 102,
+                    "percent": 0.06181818181818182
                 },
                 {
-                    "name": "1000-2000\u4eba",
-                    "value": 625
+                    "value": 134,
+                    "percent": 0.08121212121212121
                 },
                 {
-                    "name": "500-999\u4eba",
-                    "value": 138
+                    "value": 101,
+                    "percent": 0.06121212121212121
                 },
                 {
-                    "name": "100-499\u4eba",
-                    "value": 57
+                    "value": 678,
+                    "percent": 0.4109090909090909
                 }
             ],
-            "radius": [
-                "0%",
-                "75%"
-            ],
-            "center": [
-                "50%",
-                "50%"
-            ],
+            "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "formatter": "({d}%)"
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed(2) + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u6e38\u620f\u670d\u52a1 ",
+            "data": [
+                {
+                    "value": 326,
+                    "percent": 0.15092592592592594
+                },
+                {
+                    "value": 545,
+                    "percent": 0.2523148148148148
+                },
+                {
+                    "value": 412,
+                    "percent": 0.19074074074074074
+                },
+                {
+                    "value": 391,
+                    "percent": 0.18101851851851852
+                },
+                {
+                    "value": 38,
+                    "percent": 0.017592592592592594
+                },
+                {
+                    "value": 448,
+                    "percent": 0.2074074074074074
+                }
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed(2) + '%';}
             },
             "rippleEffect": {
                 "show": true,
@@ -375,14 +411,13 @@
     "legend": [
         {
             "data": [
-                "10000\u4ee5\u4e0a",
-                "5000-10000\u4eba",
-                "2000-5000\u4eba",
-                "1000-2000\u4eba",
-                "500-999\u4eba",
-                "100-499\u4eba"
+                "IT\u670d\u52a1 ",
+                "\u6e38\u620f\u670d\u52a1 "
             ],
-            "selected": {},
+            "selected": {
+                "IT\u670d\u52a1 ": true,
+                "\u6e38\u620f\u670d\u52a1 ": true
+            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -402,6 +437,58 @@
         },
         "borderWidth": 0
     },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u5317\u4eac",
+                "\u4e0a\u6d77",
+                "\u5e7f\u5dde",
+                "\u6df1\u5733",
+                "\u676d\u5dde",
+                "\u5176\u4ed6"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {}
     ],
@@ -411,7 +498,7 @@
         "itemSize": 15,
         "itemGap": 10,
         "left": "80%",
-        "top": 30,
+        "top": 0,
         "feature": {
             "saveAsImage": {
                 "show": true,
@@ -437,7 +524,7 @@
         }
     }
 };
-        chart_1b28c5790ff64bd0b6cdab0d1d8684a9.setOption(option_1b28c5790ff64bd0b6cdab0d1d8684a9);
+        chart_b84fbdb076e5491c86bbac26c83676a1.setOption(option_b84fbdb076e5491c86bbac26c83676a1);
     </script>
 </body>
 </html>
@@ -452,7 +539,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye" title="互联网公司规模(游戏行业)">互联网公司规模(游戏行业)</a>
+      <a href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-di-yu-fen-bu" title="互联网公司地域分布">互联网公司地域分布</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -465,15 +552,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo">互联网公司规模</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye">互联网公司规模(IT服务行业)</a>
-        <a class="nav-mobile-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye">下一篇</a>
+        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-rong-zi-qing-kuang-you-xi-xing-ye">互联网公司融资情况(游戏行业)</a>
+        <a class="nav-mobile-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-rong-zi-qing-kuang-you-xi-xing-ye">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
