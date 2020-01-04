@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenhuaibo.github.io/</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-01-04T09:06:52.532Z</updated>
+    <updated>2020-01-04T09:07:47.795Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenhuaibo.github.io/"/>
     <link rel="self" href="https://chenhuaibo.github.io/atom.xml"/>
@@ -16,10 +16,10 @@
         <link href="https://chenhuaibo.github.io/post/zhong-guo-hu-lian-wang-xing-ye-dong-cha-yuan-shi-shu-ju">
         </link>
         <updated>2020-01-04T09:05:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>下载地址：<url>https://www.lanzous.com/i8g938j</url><br>
+        <summary type="html"><![CDATA[<p><a href="https://www.lanzous.com/i8g938j">点此下载</a><br>
 访问密码:CHBZY</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>下载地址：<url>https://www.lanzous.com/i8g938j</url><br>
+        <content type="html"><![CDATA[<p><a href="https://www.lanzous.com/i8g938j">点此下载</a><br>
 访问密码:CHBZY</p>
 <!-- more -->
 ]]></content>
