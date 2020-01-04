@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenhuaibo.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-01-04T08:39:35.277Z</updated>
+    <updated>2020-01-04T08:40:49.276Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenhuaibo.github.io/"/>
     <link rel="self" href="https://chenhuaibo.github.io/atom.xml"/>
@@ -10,6 +10,560 @@
     <logo>https://chenhuaibo.github.io/images/avatar.png</logo>
     <icon>https://chenhuaibo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[互联网公司薪水与学历的关系（互联网电商）]]></title>
+        <id>https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-xin-shui-yu-xue-li-de-guan-xi-hu-lian-wang-dian-shang</id>
+        <link href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-xin-shui-yu-xue-li-de-guan-xi-hu-lian-wang-dian-shang">
+        </link>
+        <updated>2020-01-04T08:39:36.000Z</updated>
+        <summary type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+</head>
+<body>
+    <div id="400fdcdc98794345be43756c4f7f3822" class="chart-container" style="width:300px; height:300px;"></div>
+    <script>
+        var chart_400fdcdc98794345be43756c4f7f3822 = echarts.init(
+            document.getElementById('400fdcdc98794345be43756c4f7f3822'), 'white', {renderer: 'canvas'});
+        var option_400fdcdc98794345be43756c4f7f3822 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u5b66\u5386\u4e0d\u9650",
+            "data": [
+                2.0,
+                9.0,
+                23,
+                35,
+                61,
+                19
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+            "data": [
+                50,
+                48,
+                35,
+                16,
+                6.0,
+                7
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u7edf\u62db\u672c\u79d1",
+            "data": [
+                12,
+                14,
+                22,
+                17,
+                16,
+                36
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u672c\u79d1\u53ca\u4ee5\u4e0a",
+            "data": [
+                36,
+                28,
+                21,
+                33.5,
+                37.5
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5b66\u5386\u4e0d\u9650",
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+                "\u7edf\u62db\u672c\u79d1",
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a"
+            ],
+            "selected": {
+                "\u5b66\u5386\u4e0d\u9650": true,
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a": true,
+                "\u7edf\u62db\u672c\u79d1": true,
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "4k-10k",
+                "10k-15k",
+                "15k-20k",
+                "20k-30k",
+                "30k-60k",
+                "60k\u4ee5\u4e0a"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {}
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "top": 30,
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
+};
+        chart_400fdcdc98794345be43756c4f7f3822.setOption(option_400fdcdc98794345be43756c4f7f3822);
+    </script>
+</body>
+</html>
+]]></summary>
+        <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+</head>
+<body>
+    <div id="400fdcdc98794345be43756c4f7f3822" class="chart-container" style="width:300px; height:300px;"></div>
+    <script>
+        var chart_400fdcdc98794345be43756c4f7f3822 = echarts.init(
+            document.getElementById('400fdcdc98794345be43756c4f7f3822'), 'white', {renderer: 'canvas'});
+        var option_400fdcdc98794345be43756c4f7f3822 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u5b66\u5386\u4e0d\u9650",
+            "data": [
+                2.0,
+                9.0,
+                23,
+                35,
+                61,
+                19
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+            "data": [
+                50,
+                48,
+                35,
+                16,
+                6.0,
+                7
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u7edf\u62db\u672c\u79d1",
+            "data": [
+                12,
+                14,
+                22,
+                17,
+                16,
+                36
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u672c\u79d1\u53ca\u4ee5\u4e0a",
+            "data": [
+                36,
+                28,
+                21,
+                33.5,
+                37.5
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5b66\u5386\u4e0d\u9650",
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+                "\u7edf\u62db\u672c\u79d1",
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a"
+            ],
+            "selected": {
+                "\u5b66\u5386\u4e0d\u9650": true,
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a": true,
+                "\u7edf\u62db\u672c\u79d1": true,
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "4k-10k",
+                "10k-15k",
+                "15k-20k",
+                "20k-30k",
+                "30k-60k",
+                "60k\u4ee5\u4e0a"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {}
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "top": 30,
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
+};
+        chart_400fdcdc98794345be43756c4f7f3822.setOption(option_400fdcdc98794345be43756c4f7f3822);
+    </script>
+</body>
+</html>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[互联网公司薪水与学历的关系（计算机软件）]]></title>
         <id>https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-xin-shui-yu-xue-li-de-guan-xi-ji-suan-ji-ruan-jian</id>
