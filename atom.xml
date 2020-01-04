@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenhuaibo.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-01-04T08:16:10.534Z</updated>
+    <updated>2020-01-04T08:17:08.051Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenhuaibo.github.io/"/>
     <link rel="self" href="https://chenhuaibo.github.io/atom.xml"/>
@@ -24,7 +24,7 @@
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 </head>
 <body>
-    <div id="26076ca2246d418cb1aaf9be4c86e951" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="26076ca2246d418cb1aaf9be4c86e951" class="chart-container" style="width:500px; height:500px;"></div>
     <script>
         var chart_26076ca2246d418cb1aaf9be4c86e951 = echarts.init(
             document.getElementById('26076ca2246d418cb1aaf9be4c86e951'), 'white', {renderer: 'canvas'});
