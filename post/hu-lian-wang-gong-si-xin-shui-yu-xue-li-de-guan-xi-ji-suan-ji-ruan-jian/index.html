@@ -248,8 +248,8 @@
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye">
-      互联网公司规模(游戏行业)
+    <a class="post-title-link" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-xin-shui-yu-xue-li-de-guan-xi-ji-suan-ji-ruan-jian">
+      互联网公司薪水与学历的关系（计算机软件）
     </a>
   </h1>
   <div class="post-meta">
@@ -262,12 +262,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-clock-o"></i>
-      <span>2分钟</span>
+      <span>3分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>220<span class="pc-show">字数</span></span>
+      <span>427<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
@@ -281,11 +281,11 @@
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 </head>
 <body>
-    <div id="1b28c5790ff64bd0b6cdab0d1d8684a9" class="chart-container" style="width:300px; height:300px;"></div>
+    <div id="cff81e0733e04cdab65cff714626545d" class="chart-container" style="width:300px; height:300px;"></div>
     <script>
-        var chart_1b28c5790ff64bd0b6cdab0d1d8684a9 = echarts.init(
-            document.getElementById('1b28c5790ff64bd0b6cdab0d1d8684a9'), 'white', {renderer: 'canvas'});
-        var option_1b28c5790ff64bd0b6cdab0d1d8684a9 = {
+        var chart_cff81e0733e04cdab65cff714626545d = echarts.init(
+            document.getElementById('cff81e0733e04cdab65cff714626545d'), 'white', {renderer: 'canvas'});
+        var option_cff81e0733e04cdab65cff714626545d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -322,47 +322,93 @@
     ],
     "series": [
         {
-            "type": "pie",
-            "clockwise": true,
+            "type": "bar",
+            "name": "\u5b66\u5386\u4e0d\u9650",
             "data": [
-                {
-                    "name": "10000\u4ee5\u4e0a",
-                    "value": 194
-                },
-                {
-                    "name": "5000-10000\u4eba",
-                    "value": 137
-                },
-                {
-                    "name": "2000-5000\u4eba",
-                    "value": 175
-                },
-                {
-                    "name": "1000-2000\u4eba",
-                    "value": 625
-                },
-                {
-                    "name": "500-999\u4eba",
-                    "value": 138
-                },
-                {
-                    "name": "100-499\u4eba",
-                    "value": 57
-                }
+                2.6,
+                5.2,
+                6.9,
+                2.1,
+                0
             ],
-            "radius": [
-                "0%",
-                "75%"
-            ],
-            "center": [
-                "50%",
-                "50%"
-            ],
+            "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "formatter": "({d}%)"
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+            "data": [
+                32,
+                10.5,
+                11.6,
+                17.3,
+                17.6
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u7edf\u62db\u672c\u79d1",
+            "data": [
+                23.6,
+                36.8,
+                47,
+                34.7,
+                35.2
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u672c\u79d1\u53ca\u4ee5\u4e0a",
+            "data": [
+                42.1,
+                47.3,
+                36.8,
+                47.6,
+                47
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed() + '%';}
             },
             "rippleEffect": {
                 "show": true,
@@ -375,14 +421,17 @@
     "legend": [
         {
             "data": [
-                "10000\u4ee5\u4e0a",
-                "5000-10000\u4eba",
-                "2000-5000\u4eba",
-                "1000-2000\u4eba",
-                "500-999\u4eba",
-                "100-499\u4eba"
+                "\u5b66\u5386\u4e0d\u9650",
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+                "\u7edf\u62db\u672c\u79d1",
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a"
             ],
-            "selected": {},
+            "selected": {
+                "\u5b66\u5386\u4e0d\u9650": true,
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a": true,
+                "\u7edf\u62db\u672c\u79d1": true,
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a": true
+            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -402,6 +451,57 @@
         },
         "borderWidth": 0
     },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "4k-10k",
+                "10k-15k",
+                "15k-20k",
+                "20k-30k",
+                "30k-60k"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {}
     ],
@@ -437,7 +537,7 @@
         }
     }
 };
-        chart_1b28c5790ff64bd0b6cdab0d1d8684a9.setOption(option_1b28c5790ff64bd0b6cdab0d1d8684a9);
+        chart_cff81e0733e04cdab65cff714626545d.setOption(option_cff81e0733e04cdab65cff714626545d);
     </script>
 </body>
 </html>
@@ -452,7 +552,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye" title="互联网公司规模(游戏行业)">互联网公司规模(游戏行业)</a>
+      <a href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-xin-shui-yu-xue-li-de-guan-xi-ji-suan-ji-ruan-jian" title="互联网公司薪水与学历的关系（计算机软件）">互联网公司薪水与学历的关系（计算机软件）</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -465,15 +565,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo">互联网公司规模</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye">互联网公司规模(IT服务行业)</a>
-        <a class="nav-mobile-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye">下一篇</a>
+        <a class="nav-pc-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-di-yu-fen-bu">互联网公司地域分布</a>
+        <a class="nav-mobile-next" href="https://chenhuaibo.github.io/post/hu-lian-wang-gong-si-di-yu-fen-bu">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
