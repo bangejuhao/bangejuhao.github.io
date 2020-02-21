@@ -1,91 +1,104 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>BAT，谁让你「托管」我浏览器的？ | ChenHuaibo&#39;s Blog</title>
-<meta name="description" content="发现科技新生活" />
-<link rel="shortcut icon" href="http://chenhuaibo.github.io/favicon.ico?v=1582269872386">
+<meta name="description" content="发现科技新生活">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://chenhuaibo.github.io/favicon.ico?v=1582269895563">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://chenhuaibo.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://chenhuaibo.github.io">
-  <img class="avatar" src="http://chenhuaibo.github.io/images/avatar.png?v=1582269872386" alt="">
-  </a>
-  <h1 class="site-title">
-    ChenHuaibo&#39;s Blog
-  </h1>
-  <p class="site-description">
-    发现科技新生活
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://chenhuaibo.github.io">
+        <img src="http://chenhuaibo.github.io/images/avatar.png?v=1582269895563" class="site-logo">
+        <h1 class="site-title">ChenHuaibo&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      发现科技新生活
+    </div>
+    <div class="site-footer">
+      本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
+©2019 - 2020 ChenHuaibo's Blog<br>
+陈怀博  版权所有 | <a class="rss" href="http://chenhuaibo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              BAT，谁让你「托管」我浏览器的？
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-11-21
-              </span>
-              <span>
-                5 min read
-              </span>
-              
-                <a href="http://chenhuaibo.github.io/tag/lc4XMsYvm_/" class="post-tag">
-                  # 编辑部
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">BAT，谁让你「托管」我浏览器的？</h2>
+            <div class="post-date">2019-11-21</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
+            <div class="post-content">
+              <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
 今天，有网友爆料称显示目前市面上占有率最高的 Chrome 也出现了服务被劫持的时间，而这次疑似耍流氓的还是我们日常生活中离不开的阿里。</p>
 <!-- more -->
 <center><h2>你网上的一举一动  他们想知道就知道</h2></center>
@@ -123,102 +136,83 @@ Win + R 打开「运行」，输入「regedit」，就能开启注册表编辑�
 <p>回想这些年国产软件在隐私保护上的乱象，我还是希望你们能稍微拿出一点底线出来，尊重一下用户的权益，也尊重一下自己的尊严。</p>
 <p></p>
 <h6><p align="right">原文来自于爱否科技 有修改</p></h6>
-              </div>
-              <div class="toc-container">
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="http://chenhuaibo.github.io/tag/lc4XMsYvm_/" class="tag">
+                    编辑部
+                  </a>
                 
               </div>
-            </div>
-          </article>
-        </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://chenhuaibo.github.io/post/java-shi-li-chong-wu-shang-dian/">
+                  <h3 class="post-title">
+                    Java实例：宠物商店
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="http://chenhuaibo.github.io/post/java-shi-li-chong-wu-shang-dian/">
-              <h3 class="post-title">
-                Java实例：宠物商店
-              </h3>
-            </a>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
-©2019 - 2020 ChenHuaibo's Blog<br>
-陈怀博  版权所有 | 
-  <a class="rss" href="http://chenhuaibo.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

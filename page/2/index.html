@@ -1,92 +1,103 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>ChenHuaibo&#39;s Blog</title>
-<meta name="description" content="发现科技新生活" />
-<link rel="shortcut icon" href="http://chenhuaibo.github.io/favicon.ico?v=1582269872386">
+<meta name="description" content="发现科技新生活">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://chenhuaibo.github.io/favicon.ico?v=1582269895563">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://chenhuaibo.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://chenhuaibo.github.io">
-  <img class="avatar" src="http://chenhuaibo.github.io/images/avatar.png?v=1582269872386" alt="">
-  </a>
-  <h1 class="site-title">
-    ChenHuaibo&#39;s Blog
-  </h1>
-  <p class="site-description">
-    发现科技新生活
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://chenhuaibo.github.io">
+        <img src="http://chenhuaibo.github.io/images/avatar.png?v=1582269895563" class="site-logo">
+        <h1 class="site-title">ChenHuaibo&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      发现科技新生活
+    </div>
+    <div class="site-footer">
+      本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
+©2019 - 2020 ChenHuaibo's Blog<br>
+陈怀博  版权所有 | <a class="rss" href="http://chenhuaibo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-rong-zi-qing-kuang-it-fu-wu/">
-        <h2 class="post-title">互联网公司融资情况(IT服务)</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-01-04
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/ZGHLWHYDC/" class="post-tag">
-            # 中国互联网行业洞察
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <!DOCTYPE html>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-rong-zi-qing-kuang-it-fu-wu/">
+                  <h2 class="post-title">互联网公司融资情况(IT服务)</h2>
+                </a>
+                <div class="post-date">
+                  2020-01-04
+                </div>
+                <div class="post-abstract">
+                  <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -302,29 +313,21 @@
 </body>
 </html>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo/">
-        <h2 class="post-title">互联网公司规模</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-01-04
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/ZGHLWHYDC/" class="post-tag">
-            # 中国互联网行业洞察
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <!DOCTYPE html>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo/">
+                  <h2 class="post-title">互联网公司规模</h2>
+                </a>
+                <div class="post-date">
+                  2020-01-04
+                </div>
+                <div class="post-abstract">
+                  <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -503,29 +506,21 @@
 </body>
 </html>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye/">
-        <h2 class="post-title">互联网公司规模(游戏行业)</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-01-04
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/ZGHLWHYDC/" class="post-tag">
-            # 中国互联网行业洞察
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <!DOCTYPE html>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-you-xi-xing-ye/">
+                  <h2 class="post-title">互联网公司规模(游戏行业)</h2>
+                </a>
+                <div class="post-date">
+                  2020-01-04
+                </div>
+                <div class="post-abstract">
+                  <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -694,29 +689,21 @@
 </body>
 </html>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye/">
-        <h2 class="post-title">互联网公司规模(IT服务行业)</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-01-04
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/ZGHLWHYDC/" class="post-tag">
-            # 中国互联网行业洞察
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <!DOCTYPE html>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/hu-lian-wang-gong-si-gui-mo-it-fu-wu-xing-ye/">
+                  <h2 class="post-title">互联网公司规模(IT服务行业)</h2>
+                </a>
+                <div class="post-date">
+                  2020-01-04
+                </div>
+                <div class="post-abstract">
+                  <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -895,213 +882,142 @@
 </body>
 </html>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/sheng-ming/">
-        <h2 class="post-title">声明</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-08
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚</p>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/sheng-ming/">
+                  <h2 class="post-title">声明</h2>
+                </a>
+                <div class="post-date">
+                  2019-12-08
+                </div>
+                <div class="post-abstract">
+                  <p>本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚</p>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/test/">
-        <h2 class="post-title">test</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-07
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/bu-hui-qing-chun-jiao-yu-bu-wo-xin-zhong-de-si-zheng-ke-di-san-jie-quan-guo-gao-xiao-xue-sheng-wei-dian-ying-zhan-shi-can-sai-zuo-pin/">
-        <h2 class="post-title">一直有人爱着你 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-06
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/f8f2Nyg23/" class="post-tag">
-            # 视频
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/shi-pin-tou-fang-ce-shi/">
-        <h2 class="post-title">不悔青春 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-06
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/f8f2Nyg23/" class="post-tag">
-            # 视频
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/batshui-rang-ni-tuo-guan-wo-liu-lan-qi-de/">
-        <h2 class="post-title">BAT，谁让你「托管」我浏览器的？</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-21
-        </span>
-        <span>
-          5 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/lc4XMsYvm_/" class="post-tag">
-            # 编辑部
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/test/">
+                  <h2 class="post-title">test</h2>
+                </a>
+                <div class="post-date">
+                  2019-12-07
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/bu-hui-qing-chun-jiao-yu-bu-wo-xin-zhong-de-si-zheng-ke-di-san-jie-quan-guo-gao-xiao-xue-sheng-wei-dian-ying-zhan-shi-can-sai-zuo-pin/">
+                  <h2 class="post-title">一直有人爱着你 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
+                </a>
+                <div class="post-date">
+                  2019-12-06
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/shi-pin-tou-fang-ce-shi/">
+                  <h2 class="post-title">不悔青春 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
+                </a>
+                <div class="post-date">
+                  2019-12-06
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/batshui-rang-ni-tuo-guan-wo-liu-lan-qi-de/">
+                  <h2 class="post-title">BAT，谁让你「托管」我浏览器的？</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-21
+                </div>
+                <div class="post-abstract">
+                  <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
 今天，有网友爆料称显示目前市面上占有率最高的 Chrome 也出现了服务被劫持的时间，而这次疑似耍流氓的还是我们日常生活中离不开的阿里。</p>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://chenhuaibo.github.io/post/java-shi-li-chong-wu-shang-dian/">
-        <h2 class="post-title">Java实例：宠物商店</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-21
-        </span>
-        <span>
-          3 min read
-        </span>
-        
-          <a href="http://chenhuaibo.github.io/tag/YZ1hCgzLjm/" class="post-tag">
-            # Java
-          </a>
-        
-          <a href="http://chenhuaibo.github.io/tag/bD8VrFlJC9/" class="post-tag">
-            # 原创
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>任务要求：<br>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://chenhuaibo.github.io/post/java-shi-li-chong-wu-shang-dian/">
+                  <h2 class="post-title">Java实例：宠物商店</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-21
+                </div>
+                <div class="post-abstract">
+                  <p>任务要求：<br>
 1.设计一个“宠物商店”，在宠物商店中可以有多种宠物，数量由用户决定，可以根据宠物关键字的查找，获取相应的宠物信息，而宠物的相关信息可以根据需要自行设计。<br>
 2.根据要求中提示的宠物信息可以自行设计，先简单设计宠物的名字、品种、颜色、年龄等属性。<br>
 3.宠物的种类很多，如猫、狗等都属于宠物，所以宠物应该是一个标准；在宠物商店中，只要符合宠物标准的，应该都可以放进宠物商店中。<br>
 4.宠物商店中因为要保存多种宠物，所以应该具有一个宠物的对象数组；因为宠物的数量由用户决定，所以在创建宠物商店时，需要分配好能够保存宠物的个数。</p>
 
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+    <a href="http://chenhuaibo.github.io/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
+  
+  
+    <a href="http://chenhuaibo.github.io/page/3/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
+        </div>
       </div>
-    </article>
-  
-</div>
+    </div>
 
-    
-        <div class="pagination-container">
-  
-    <a href="http://chenhuaibo.github.io/" class="prev-page">上一页</a>
-  
-  
-    <a href="http://chenhuaibo.github.io/page/3/" class="next-page">下一页</a>
-  
-</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    
-        <div class="site-footer">
-  本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
-©2019 - 2020 ChenHuaibo's Blog<br>
-陈怀博  版权所有 | 
-  <a class="rss" href="http://chenhuaibo.github.io/atom.xml" target="_blank">RSS</a>
-</div>
+<script type="application/javascript">
 
-<script>
-  hljs.initHighlightingOnLoad()
+AOS.init();
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+hljs.initHighlightingOnLoad()
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
