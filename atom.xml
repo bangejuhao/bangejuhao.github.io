@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://chenhuaibo.github.io</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-02-21T07:25:38.731Z</updated>
+    <updated>2020-02-21T07:27:30.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://chenhuaibo.github.io"/>
     <link rel="self" href="http://chenhuaibo.github.io/atom.xml"/>
-    <subtitle>发现科技新生活</subtitle>
     <logo>http://chenhuaibo.github.io/images/avatar.png</logo>
     <icon>http://chenhuaibo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ChenHuaibo&apos;s Blog</rights>
