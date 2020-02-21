@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://chenhuaibo.github.io/</id>
+    <id>https://chenhuaibo.github.io</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-02-21T07:36:34.595Z</updated>
+    <updated>2020-02-21T07:41:57.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://chenhuaibo.github.io/"/>
+    <link rel="alternate" href="https://chenhuaibo.github.io"/>
     <link rel="self" href="https://chenhuaibo.github.io/atom.xml"/>
     <logo>https://chenhuaibo.github.io/images/avatar.png</logo>
     <icon>https://chenhuaibo.github.io/favicon.ico</icon>
@@ -172,7 +172,7 @@
         <updated>2020-01-04T08:44:36.000Z</updated>
         <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenhuaibo.github.io//post-images/1578127504128.jpeg" alt="" loading="lazy"></figure>
 ]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenhuaibo.github.io//post-images/1578127504128.jpeg" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenhuaibo.github.io/post-images/1578127504128.jpeg" alt="" loading="lazy"></figure>
 <!-- more -->
 ]]></content>
     </entry>
