@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>视频 | ChenHuaibo&#39;s Blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584685557941">
+<link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584686203635">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://www.chenhuaibo.xyz/styles/main.css">
 
@@ -18,122 +21,149 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 
 
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://www.chenhuaibo.xyz">
-        <img src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584685557941" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://www.chenhuaibo.xyz">
+        <img class="avatar" src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584686203635" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://www.chenhuaibo.xyz">
         <h1 class="site-title">ChenHuaibo&#39;s Blog</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-    </div>
-    <div class="site-footer">
-      本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
-©2019 - 2020 ChenHuaibo's Blog<br>
-陈怀博  版权所有 | <a class="rss" href="https://www.chenhuaibo.xyz/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 视频</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://www.chenhuaibo.xyz/post/bu-hui-qing-chun-jiao-yu-bu-wo-xin-zhong-de-si-zheng-ke-di-san-jie-quan-guo-gao-xiao-xue-sheng-wei-dian-ying-zhan-shi-can-sai-zuo-pin/">
-                  <h2 class="post-title">一直有人爱着你 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
-                </a>
-                <div class="post-date">
-                  2019-12-06
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://www.chenhuaibo.xyz/post/shi-pin-tou-fang-ce-shi/">
-                  <h2 class="post-title">不悔青春 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
-                </a>
-                <div class="post-date">
-                  2019-12-06
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+      <div class="content-container">
 
-          <div class="pagination-container">
-  
-  
-</div>
-
+        <div class="current-tag-container">
+          <h2 class="title">
+            <i class="icon icon-pricetags-outline"></i> 视频
+          </h2> 
         </div>
+
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://www.chenhuaibo.xyz/post/bu-hui-qing-chun-jiao-yu-bu-wo-xin-zhong-de-si-zheng-ke-di-san-jie-quan-guo-gao-xiao-xue-sheng-wei-dian-ying-zhan-shi-can-sai-zuo-pin/">
+        <h2 class="post-title">一直有人爱着你 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2019-12-06</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://www.chenhuaibo.xyz/tag/f8f2Nyg23/">
+                视频
+                
+              </a>
+            
+          </span>
+        
       </div>
     </div>
+    
+  </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<section class="post-item">
+    <div class="content">
+      <a href="https://www.chenhuaibo.xyz/post/shi-pin-tou-fang-ce-shi/">
+        <h2 class="post-title">不悔青春 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2019-12-06</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://www.chenhuaibo.xyz/tag/f8f2Nyg23/">
+                视频
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
 
-<script type="application/javascript">
 
-AOS.init();
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  本网站是个人网站，不含有企业、单位等非个人网站的信息，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚 如有问题请拨打4008777818转3号线咨询<br>
+©2019 - 2020 ChenHuaibo's Blog<br>
+陈怀博  版权所有 | <a class="rss" href="https://www.chenhuaibo.xyz/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
