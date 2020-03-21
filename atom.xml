@@ -2,17 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.chenhuaibo.xyz</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-03-21T14:48:23.128Z</updated>
+    <updated>2020-03-21T15:40:25.794Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.chenhuaibo.xyz"/>
     <link rel="self" href="https://www.chenhuaibo.xyz/atom.xml"/>
-    <subtitle>
-
-©2019 - 2020 ChenHuaibo&apos;s Blog
-
-
-
-陈怀博  版权所有</subtitle>
     <logo>https://www.chenhuaibo.xyz/images/avatar.png</logo>
     <icon>https://www.chenhuaibo.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, ChenHuaibo&apos;s Blog</rights>

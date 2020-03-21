@@ -1,114 +1,117 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>BAT，谁让你「托管」我浏览器的？ | ChenHuaibo&#39;s Blog</title>
-<meta name="description" content="
-
-©2019 - 2020 ChenHuaibo&#39;s Blog
-
-
-
-陈怀博  版权所有">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584802101468">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    BAT，谁让你「托管」我浏览器的？ | ChenHuaibo&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584805207199">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://www.chenhuaibo.xyz/styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.chenhuaibo.xyz/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-  </head>
-  <body>
-    <div id="app" class="main">
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://www.chenhuaibo.xyz">
-        <img src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584802101468" class="site-logo">
-        <h1 class="site-title">ChenHuaibo&#39;s Blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+                    
+                            
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://www.chenhuaibo.xyz">
+                <img class="avatar" src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584805207199" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    ChenHuaibo&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-
-©2019 - 2020 ChenHuaibo's Blog
-
-
-
-陈怀博  版权所有
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://www.chenhuaibo.xyz/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">BAT，谁让你「托管」我浏览器的？</h2>
-            <div class="post-date">2019-11-21</div>
-            
-            <div class="post-content">
-              <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            BAT，谁让你「托管」我浏览器的？
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2019-11-21</time>
+                            
+                                <a href="https://www.chenhuaibo.xyz/tag/lc4XMsYvm_/" class="post-tag i-tag
+                            i-tag-">
+                            #编辑部
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
 今天，有网友爆料称显示目前市面上占有率最高的 Chrome 也出现了服务被劫持的时间，而这次疑似耍流氓的还是我们日常生活中离不开的阿里。</p>
 <!-- more -->
 <center><h2>你网上的一举一动  他们想知道就知道</h2></center>
@@ -146,83 +149,100 @@ Win + R 打开「运行」，输入「regedit」，就能开启注册表编辑�
 <p>回想这些年国产软件在隐私保护上的乱象，我还是希望你们能稍微拿出一点底线出来，尊重一下用户的权益，也尊重一下自己的尊严。</p>
 <p></p>
 <h6><p align="right">原文来自于爱否科技 有修改</p></h6>
-            </div>
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://www.chenhuaibo.xyz/post/java-shi-li-chong-wu-shang-dian/">
+                                <h3 class="post-title">
+                                    Java实例：宠物商店
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://www.chenhuaibo.xyz/images/avatar.png?v=1584805207199)">
+        </div>
+        <h1 class="id_card-title">
+            ChenHuaibo&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
             
-              <div class="tag-container">
-                
-                  <a href="https://www.chenhuaibo.xyz/tag/lc4XMsYvm_/" class="tag">
-                    编辑部
-                  </a>
-                
-              </div>
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
             
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://www.chenhuaibo.xyz/post/java-shi-li-chong-wu-shang-dian/">
-                  <h3 class="post-title">
-                    Java实例：宠物商店
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
         </div>
-      </div>
     </div>
+    
+                                    
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                </div>
 
-<script type="application/javascript">
 
-AOS.init();
 
-hljs.initHighlightingOnLoad()
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+            </div>
 
+
+            <div class="site-footer">
+   | 
+  <a class="rss" href="https://www.chenhuaibo.xyz/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
 
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    </div>
     <script>
-
-      var gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: '',
-        owner: '',
-        admin: [''],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
     </script>
-  
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: [''],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
 
-  
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
 
+                    
+                                
+</body>
 
-
-
-  </body>
 </html>
