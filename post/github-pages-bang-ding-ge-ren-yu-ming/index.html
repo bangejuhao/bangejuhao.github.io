@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    Gridea | ChenHuaibo&#39;s Blog
+    Github pages 绑定个人域名 | ChenHuaibo&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584851835464">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -19,6 +19,14 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
 </head>
 
 <body>
@@ -85,58 +93,53 @@
     });
 </script>
 
-            <div id="main-content" class="post-container main-container">
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
                 <div id="content" class="main-container-left">
-                    
-    <div class="i-card">
-        <b>标签：#
-        Gridea</b>
-    </div>
-    
-        
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://www.chenhuaibo.xyz/post/hello-gridea/">
-                        Hello Gridea
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2018-12-12</time>
-                    
-                        <a href="https://www.chenhuaibo.xyz/tag/RnIvhSISj/" class="post-tag i-tag
-                            i-tag-info">
-            #Gridea
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="https://www.chenhuaibo.xyz/post/hello-gridea/" class="post-feature-image" style="background-image:url(https://www.chenhuaibo.xyz/post-images/hello-gridea.png) ">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Github pages 绑定个人域名
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-03-22</time>
+                            
+                                <a href="https://www.chenhuaibo.xyz/tag/jiaocheng/" class="post-tag i-tag
+                            i-tag-other_3">
+                            #教程
                         </a>
-                        
-                            <div class="post-content">
                                 
-                                    <div class="post-content-abstract">
-                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="https://www.chenhuaibo.xyz/post/hello-gridea/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
+                        </div>
+                        
+                                <div class="post-content">
+                                    <h1>前言</h1>
+近日搭建了自己的 Blog，并且将代码托管在了Github上。众所周知，Github pages的域名都是统一的yourName.github.io。那么，如何将Github pages绑定在自己的域名上呢？
+<!-- more -->
+<h1>需要</h1>
+1.个人的Github pages
+2.个人域名
+                                </div>
+                    </article>
+                    <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://www.chenhuaibo.xyz/post/zhong-guo-hu-lian-wang-xing-ye-dong-cha-shu-ju-ke-shi-hua-quan-bu-yuan-shi-dai-ma/">
+                                <h3 class="post-title">
+                                    中国互联网行业洞察数据可视化全部原始代码
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
     <div class="id_card i-card">
         <div class="id_card-avatar" style="background-image: url(https://www.chenhuaibo.xyz/images/avatar.png?v=1584851835464)">
         </div>
@@ -160,13 +163,14 @@
         </div>
     </div>
     
-
-                        <!-- 公告栏 -->
-                        
+                                    
 
                 </div>
-            </div>
 
+
+
+
+            </div>
 
 
             <div class="site-footer">
@@ -178,6 +182,7 @@
   hljs.initHighlightingOnLoad()
 </script>
 
+
     </div>
     <script>
         $('#sidebar').stickySidebar({
@@ -185,6 +190,27 @@
             // bottomSpacing: 60
         });
     </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: [''],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
 </body>
 
 </html>
