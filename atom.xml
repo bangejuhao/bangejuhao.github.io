@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenhuaibo.xyz</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-03-22T04:55:36.691Z</updated>
+    <updated>2020-03-22T05:19:26.058Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenhuaibo.xyz"/>
     <link rel="self" href="https://chenhuaibo.xyz/atom.xml"/>
@@ -16,15 +16,29 @@
         <link href="https://chenhuaibo.xyz/post/github-pages-bang-ding-ge-ren-yu-ming/">
         </link>
         <updated>2020-03-22T04:32:33.000Z</updated>
-        <summary type="html"><![CDATA[<h1>前言</h1>
+        <summary type="html"><![CDATA[<h3>前言</h3>
 近日搭建了自己的 Blog，并且将代码托管在了Github上。众所周知，Github pages的域名都是统一的yourName.github.io。那么，如何将Github pages绑定在自己的域名上呢？
 ]]></summary>
-        <content type="html"><![CDATA[<h1>前言</h1>
+        <content type="html"><![CDATA[<h3>前言</h3>
 近日搭建了自己的 Blog，并且将代码托管在了Github上。众所周知，Github pages的域名都是统一的yourName.github.io。那么，如何将Github pages绑定在自己的域名上呢？
 <!-- more -->
-<h1>需要</h1>
-1.个人的Github pages
-2.个人域名]]></content>
+<h3>需要</h3>
+1.个人的Github pages<br>
+2.个人域名
+<h3>1.域名解析配置</h3>
+将域名和IP或其他域名进行绑定，让你能通过不同域名访问同一个网站。首先在自己的域名控制台找到域名管理，选择域名解析功能。记录类型选择 A记录 或者 CNAME 就可以了。接下里就是域名解析的几个要点：<br>
+1.A记录类型记录值填写 IP 值，两种选择：<br>
+①你的github.io的IP值<br>
+②在官方提供的两个IP中选择192.30.252.153或192.30.252.154<br>
+2.CNAME类型，请选好主机记录，按主机记录类型填写记录值。推荐选择@，那么记录值就填写按自己的github名填写yourName.github.io就好了<br>
+<h3>2.Github pages中CNAME文件的配置</h3>
+有两种方法：<br>
+1.在Github的Github pages的仓库根目录里加上CNAME文件，里面写上个人域名即可。我的是：chenhuaibo.xyz<br>
+2.在github.io仓库中的Settings的GitHub Pages项直接设置Custom domain，Github会自动添加CNAME文件<br>
+![](https://chenhuaibo.xyz/post-images/1584854350602.png)
+<h3>3.为什么配置了域名解析还要配置CNAME文件呢？</h3>
+实际上，个人域名是名字，Github pages相当于网站空间。试想，如果不在网站空间配置CNAME，就可以成功绑定域名，那么岂不是可以给别随便一个的网站绑定上自己的域名？相同，如果只需配置Github pages的CNAME，而不用域名解析，那不是也可以将自己的网站绑在别人的域名上？<br>
+所以，域名绑定是需要“双方同意”的。]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[中国互联网行业洞察数据可视化全部原始代码]]></title>

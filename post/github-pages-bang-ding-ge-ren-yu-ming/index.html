@@ -7,7 +7,7 @@
 <title>
     Github pages 绑定个人域名 | ChenHuaibo&#39;s Blog
 </title>
-<link rel="shortcut icon" href="https://chenhuaibo.xyz/favicon.ico?v=1584852935218">
+<link rel="shortcut icon" href="https://chenhuaibo.xyz/favicon.ico?v=1584854354652">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -35,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://chenhuaibo.xyz">
-                <img class="avatar" src="https://chenhuaibo.xyz/images/avatar.png?v=1584852935218" alt="">
+                <img class="avatar" src="https://chenhuaibo.xyz/images/avatar.png?v=1584854354652" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -104,19 +104,33 @@
                             <time class="post-time">2020-03-22</time>
                             
                                 <a href="https://chenhuaibo.xyz/tag/jiaocheng/" class="post-tag i-tag
-                            i-tag-error">
+                            i-tag-other_2">
                             #教程
                         </a>
                                 
                         </div>
                         
                                 <div class="post-content">
-                                    <h1>前言</h1>
+                                    <h3>前言</h3>
 近日搭建了自己的 Blog，并且将代码托管在了Github上。众所周知，Github pages的域名都是统一的yourName.github.io。那么，如何将Github pages绑定在自己的域名上呢？
 <!-- more -->
-<h1>需要</h1>
-1.个人的Github pages
+<h3>需要</h3>
+1.个人的Github pages<br>
 2.个人域名
+<h3>1.域名解析配置</h3>
+将域名和IP或其他域名进行绑定，让你能通过不同域名访问同一个网站。首先在自己的域名控制台找到域名管理，选择域名解析功能。记录类型选择 A记录 或者 CNAME 就可以了。接下里就是域名解析的几个要点：<br>
+1.A记录类型记录值填写 IP 值，两种选择：<br>
+①你的github.io的IP值<br>
+②在官方提供的两个IP中选择192.30.252.153或192.30.252.154<br>
+2.CNAME类型，请选好主机记录，按主机记录类型填写记录值。推荐选择@，那么记录值就填写按自己的github名填写yourName.github.io就好了<br>
+<h3>2.Github pages中CNAME文件的配置</h3>
+有两种方法：<br>
+1.在Github的Github pages的仓库根目录里加上CNAME文件，里面写上个人域名即可。我的是：chenhuaibo.xyz<br>
+2.在github.io仓库中的Settings的GitHub Pages项直接设置Custom domain，Github会自动添加CNAME文件<br>
+![](https://chenhuaibo.xyz/post-images/1584854350602.png)
+<h3>3.为什么配置了域名解析还要配置CNAME文件呢？</h3>
+实际上，个人域名是名字，Github pages相当于网站空间。试想，如果不在网站空间配置CNAME，就可以成功绑定域名，那么岂不是可以给别随便一个的网站绑定上自己的域名？相同，如果只需配置Github pages的CNAME，而不用域名解析，那不是也可以将自己的网站绑在别人的域名上？<br>
+所以，域名绑定是需要“双方同意”的。
                                 </div>
                     </article>
                     <!--  -->
@@ -141,7 +155,7 @@
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://chenhuaibo.xyz/images/avatar.png?v=1584852935218)">
+        <div class="id_card-avatar" style="background-image: url(https://chenhuaibo.xyz/images/avatar.png?v=1584854354652)">
         </div>
         <h1 class="id_card-title">
             ChenHuaibo&#39;s Blog
