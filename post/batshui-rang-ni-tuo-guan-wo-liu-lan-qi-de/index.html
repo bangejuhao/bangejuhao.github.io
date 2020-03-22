@@ -1,84 +1,117 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
- <head>
-     <meta charset="utf-8" />
-  <title>BAT，谁让你「托管」我浏览器的？ | ChenHuaibo&#39;s Blog</title>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <link rel="stylesheet" href="https://www.chenhuaibo.xyz/styles/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-   <script src="https://cdn.staticfile.org/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
- </head>
- <body>
-     <div class="sidebar animated fadeInDown">
-   <div class="logo-title">
-    <div class="title">
-     <img src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584843841233" style="width:127px;" />
+<html>
 
-     <div class="description">
-      <p>我有无限可能</p>
-     </div>
-    </div>
-   </div>
-   <ul class="social-links">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    BAT，谁让你「托管」我浏览器的？ | ChenHuaibo&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://www.chenhuaibo.xyz/favicon.ico?v=1584844688162">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://www.chenhuaibo.xyz/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.chenhuaibo.xyz/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-    
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
 
-    
+                    
+                            
+</head>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-   </ul>
-   <div class="footer">
-    <div class="by_farbox">
-   ©2019-2020 ChenHuaibo's Blog&nbsp;&nbsp;&nbsp;&nbsp;陈怀博 版权所有
-    </div>
-    
-
-    </div>
-   </div>
-  </div>
-  <div class="main">
-     <div class="page-top animated fadeInDown">
+<body>
+    <div class="main">
+        <div class="header">
     <div class="nav">
-    
-     <li><a  href="/">首页</a></li>
-
-     <li><a  href="/archives">归档</a></li>
-
-     <li><a  href="/tags">标签</a></li>
-
+        <div class="logo">
+            <a href="https://www.chenhuaibo.xyz">
+                <img class="avatar" src="https://www.chenhuaibo.xyz/images/avatar.png?v=1584844688162" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    ChenHuaibo&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-    <div class="information">
-     <div class="back_btn">
-      <li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li>
-     </div>
-    </div>
-   </div>
-   <div class="autopagerize_page_element">
-    <div class="content">
-     <div class="post-page">
-      <div class="post animated fadeInDown">
-       <div class="post-title">
-        <h3><a>BAT，谁让你「托管」我浏览器的？</a></h3>
-       </div>
-       <div class="post-content">
-        <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            BAT，谁让你「托管」我浏览器的？
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2019-11-21</time>
+                            
+                                <a href="https://www.chenhuaibo.xyz/tag/lc4XMsYvm_/" class="post-tag i-tag
+                            i-tag-other_4">
+                            #编辑部
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <p>移动互联网时代，浏览器的功能已经被各大 App 给分散化了。但是在桌面端，尤其是 PC 上浏览器还是一个很重要的信息入口。显然厂商们也知道这个道理，因此浏览器也成为了被「流氓」的重要阵地。<br>
 今天，有网友爆料称显示目前市面上占有率最高的 Chrome 也出现了服务被劫持的时间，而这次疑似耍流氓的还是我们日常生活中离不开的阿里。</p>
 <!-- more -->
 <center><h2>你网上的一举一动  他们想知道就知道</h2></center>
@@ -116,75 +149,100 @@ Win + R 打开「运行」，输入「regedit」，就能开启注册表编辑�
 <p>回想这些年国产软件在隐私保护上的乱象，我还是希望你们能稍微拿出一点底线出来，尊重一下用户的权益，也尊重一下自己的尊严。</p>
 <p></p>
 <h6><p align="right">原文来自于爱否科技 有修改</p></h6>
-       </div>
-       <div class="post-footer">
-        <div class="meta">
-         <div class="info">
-          <i class="fa fa-sun-o"></i>
-          <span class="date">2019-11-21</span>
-          <i class="fa fa-tag"></i>
-          
-          <a class="tag" href="https://www.chenhuaibo.xyz/tag/lc4XMsYvm_/" title="编辑部">编辑部 </a>
-          
-         </div>
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://www.chenhuaibo.xyz/post/java-shi-li-chong-wu-shang-dian/">
+                                <h3 class="post-title">
+                                    Java实例：宠物商店
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://www.chenhuaibo.xyz/images/avatar.png?v=1584844688162)">
         </div>
-       </div>
-      </div>
-      <div class="share">
-       <div class="evernote">
-        <a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a>
-       </div>
-       <div class="weibo">
-        <a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a>
-       </div>
-       <div class="twitter">
-        <a class="fa fa-twitter" href="http://twitter.com/home?status=,https://www.chenhuaibo.xyz/post/batshui-rang-ni-tuo-guan-wo-liu-lan-qi-de/,;"></a>
-       </div>
-      </div>
-      <div class="pagination">
-       <ul class="clearfix">
+        <h1 class="id_card-title">
+            ChenHuaibo&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            我有无限可能
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
-        <li class="pre pagbuttons"><a class="btn" role="navigation" href="https://www.chenhuaibo.xyz/post/shi-pin-tou-fang-ce-shi/" title="不悔青春 - 教育部“我心中的思政课”第三届全国高校学生微电影展示参赛作品">上一篇</a></li>
-         
-        
-        <li class="next pagbuttons"><a class="btn" role="navigation" href="https://www.chenhuaibo.xyz/post/java-shi-li-chong-wu-shang-dian/" title=" Java实例：宠物商店">下一篇</a></li>
-        
-       </ul>
-      </div>
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        </div>
+    </div>
+    
+                                    
 
-<div id="gitalk-container"></div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  ©2019-2020 ChenHuaibo's Blog&nbsp;&nbsp;&nbsp;&nbsp;陈怀博 版权所有 | 
+  <a class="rss" href="https://www.chenhuaibo.xyz/atom.xml" target="_blank">RSS</a>
+</div>
 
 <script>
-
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
+  hljs.initHighlightingOnLoad()
 </script>
 
-          
-          
-        
-     </div>
+
     </div>
-   </div>
-  </div>
-  <script src="https://www.chenhuaibo.xyz/media/scripts/jquery.js"></script>
-  <script src="https://www.chenhuaibo.xyz/media/scripts/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://www.chenhuaibo.xyz/media/scripts/jquery.appear.js"></script>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: [''],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
 
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
 
- </body>
+                    
+                                
+</body>
+
 </html>
