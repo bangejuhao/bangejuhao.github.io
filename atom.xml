@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenhuaibo.xyz</id>
     <title>ChenHuaibo&apos;s Blog</title>
-    <updated>2020-05-07T08:22:50.076Z</updated>
+    <updated>2020-05-08T04:27:41.540Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenhuaibo.xyz"/>
     <link rel="self" href="https://chenhuaibo.xyz/atom.xml"/>
@@ -32,17 +32,17 @@
 实名认证之后，进入腾讯云函数SCF<br>
 选择函数服务，单击新建<br>
 <img src="https://chenhuaibo.xyz/post-images/1588772824743.png" alt="" loading="lazy"><br>
-函数名称自己设置即可，运行环境选择Nodejs 8.9，创建方式选择空白函数，然后单击下一步<br>
-<img src="https://chenhuaibo.xyz/post-images/1588772937206.png" alt="" loading="lazy"><br>
+函数名称自己设置即可，运行环境选择	Nodejs10.15，创建方式选择空白函数，然后单击下一步<br>
+<img src="https://chenhuaibo.xyz/post-images/1588911984495.png" alt="" loading="lazy"><br>
 提交方法选择本地上传zip包，并上传刚刚下载的代码，然后单击完成<br>
-<img src="https://chenhuaibo.xyz/post-images/1588773077598.png" alt="" loading="lazy"><br>
-选择函数代码，将第一步获取的wps_sid填入sid，wpsinviteid填1，sckey中的填写内容进入<a href='http://sc.ftqq.com/3.version'>http://sc.ftqq.com/3.version</a> 根据步骤生成并填入（科学上网），然后单击保存<br>
-<img src="https://chenhuaibo.xyz/post-images/1588773349905.png" alt="" loading="lazy"></p>
+<img src="https://chenhuaibo.xyz/post-images/1588911996725.png" alt="" loading="lazy"><br>
+选择函数代码，将第一步获取的wps_sid填入sid，wpsinviteid填自己的WPS账号，sckey中的填写内容进入<a href='http://sc.ftqq.com/3.version'>http://sc.ftqq.com/3.version</a> 根据步骤生成并填入（科学上网），然后单击保存<br>
+<img src="https://chenhuaibo.xyz/post-images/1588912017631.png" alt="" loading="lazy"></p>
 <h2>3.设置定时任务</h2>
 单击触发管理，单击创建触发器
 <p><img src="https://chenhuaibo.xyz/post-images/1588773458283.png" alt="" loading="lazy"><br>
-触发方式选择定时触发，定时任务名称自己设置即可，触发周期选择自定义触发周期，corn表达式输入“0 0 6 * * * *”，最后单击提交。</p>
-<p><img src="https://chenhuaibo.xyz/post-images/1588773903451.png" alt="" loading="lazy"><br>
+触发方式选择定时触发，定时任务名称自己设置即可，触发周期选择自定义触发周期，corn表达式输入“0 0 7 * * * *”，最后单击提交。</p>
+<p><img src="https://chenhuaibo.xyz/post-images/1588912038964.png" alt="" loading="lazy"><br>
 大功告成，WPS自动打卡就这样设置成功了。</p>
 ]]></content>
     </entry>
