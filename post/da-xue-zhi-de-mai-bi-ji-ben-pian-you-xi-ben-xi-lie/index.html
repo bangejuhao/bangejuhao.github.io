@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    Java实例：宠物商店 | ChenHuaibo&#39;s Blog
+    大学值得买·笔记本篇（游戏本系列） | ChenHuaibo&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://chenhuaibo.xyz/favicon.ico?v=1594207879950">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -98,121 +98,88 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            Java实例：宠物商店
+                            大学值得买·笔记本篇（游戏本系列）
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-11-21</time>
+                            <time class="post-time">2020-07-08</time>
                             
-                                <a href="https://chenhuaibo.xyz/tag/YZ1hCgzLjm/" class="post-tag i-tag
-                            i-tag-other_2">
-                            #Java
+                                <a href="https://chenhuaibo.xyz/tag/lc4XMsYvm_/" class="post-tag i-tag
+                            i-tag-success">
+                            #编辑部
                         </a>
                                 
                                 <a href="https://chenhuaibo.xyz/tag/bD8VrFlJC9/" class="post-tag i-tag
-                            i-tag-error">
+                            i-tag-other_3">
                             #原创
                         </a>
                                 
                         </div>
                         
                                 <div class="post-content">
-                                    <p>任务要求：<br>
-1.设计一个“宠物商店”，在宠物商店中可以有多种宠物，数量由用户决定，可以根据宠物关键字的查找，获取相应的宠物信息，而宠物的相关信息可以根据需要自行设计。<br>
-2.根据要求中提示的宠物信息可以自行设计，先简单设计宠物的名字、品种、颜色、年龄等属性。<br>
-3.宠物的种类很多，如猫、狗等都属于宠物，所以宠物应该是一个标准；在宠物商店中，只要符合宠物标准的，应该都可以放进宠物商店中。<br>
-4.宠物商店中因为要保存多种宠物，所以应该具有一个宠物的对象数组；因为宠物的数量由用户决定，所以在创建宠物商店时，需要分配好能够保存宠物的个数。</p>
+                                    <p>游戏本：同价位中配置性能最高的选择，笔记本的重量最沉。推荐热爱打游戏和信息专业相关的学生购买。</p>
+<p>全能本：同价位中配置性能中等的选择，相对轻薄又有一定的游戏性能；但全能不精，配置性能不如游戏本，重量控制不如轻薄本。<br>
+推荐大多数人购买。</p>
+<p>超薄本：同价位中配置性能最低的选择，也是重量最轻的选择。适合需要高频次移动笔记本的人群；极不适合作为日常主力电脑。</p>
 <!-- more -->
-<p>宠物接口：</p>
-<blockquote>
-<p>package 宠物商店项目;<br>
-public interface Pet {<br>
-String getInfo();<br>
-void printInfo();<br>
-boolean searchPet(String s);<br>
-}</p>
-</blockquote>
-<p>宠物猫：</p>
-<blockquote>
-<p>package 宠物商店项目;<br>
-public class Cat implements Pet{<br>
-private String name;<br>
-private String type;<br>
-private int age;<br>
-private String color;<br>
-Cat(){}<br>
-Cat(String s,String t,int a,String c){<br>
-name=s;<br>
-type=t;<br>
-age=a;<br>
-color=c;<br>
-}<br>
-public String getInfo() {<br>
-return name+type+color;<br>
-}<br>
-public void printInfo() {<br>
-System.out.println(name+&quot;|&quot;+type+&quot;|&quot;+color);<br>
-}<br>
-public boolean searchPet(String s) {<br>
-if(name.indexOf(s)&gt;=0||type.indexOf(s)&gt;=0||color.indexOf(s)&gt;=0) {<br>
-return true;<br>
-}<br>
-return false;<br>
-}<br>
-}</p>
-</blockquote>
-<p>宠物狗：</p>
-<blockquote>
-<p>package 宠物商店项目;<br>
-public class Dog implements Pet{<br>
-private String name;<br>
-private String type;<br>
-private int age;<br>
-private String color;<br>
-Dog(){}<br>
-Dog(String s,String t,int a,String c){<br>
-name=s;<br>
-type=t;<br>
-age=a;<br>
-color=c;<br>
-}<br>
-public String getInfo() {<br>
-return name+type+color;<br>
-}<br>
-public void printInfo() {<br>
-System.out.println(name+&quot;|&quot;+type+&quot;|&quot;+color);<br>
-}<br>
-public boolean searchPet(String s) {<br>
-if(name.indexOf(s)&gt;=0||type.indexOf(s)&gt;=0||color.indexOf(s)&gt;=0) {<br>
-return true;<br>
-}<br>
-return false;<br>
-}<br>
-}</p>
-</blockquote>
-<p>宠物商店：</p>
-<blockquote>
-<p>package 宠物商店项目;<br>
-public class PetShop {<br>
-Pet pets[]=new Pet[4];<br>
-PetShop() {<br>
-pets[0]=new Cat(&quot;小澳子&quot;,&quot;波斯猫&quot;,2,&quot;土色&quot;);<br>
-pets[1]=new Cat(&quot;小黑&quot;,&quot;土猫&quot;,2,&quot;红色&quot;);<br>
-pets[2]=new Dog(&quot;小黄狗&quot;,&quot;拉普拉多&quot;,4,&quot;白色&quot;);<br>
-pets[3]=new Dog(&quot;小黄狗&quot;,&quot;德牧&quot;,2,&quot;黄色&quot;);<br>
-}<br>
-void searPet(String s) {<br>
-System.out.println(&quot;当前搜索的信息是：&quot;+s);<br>
-for(int i=0;i&lt;this.pets.length;i++) {<br>
-if(pets[i].searchPet(s))<br>
-pets[i].printInfo();<br>
-}<br>
-}<br>
-public static void main(String[] args) {<br>
-PetShop ps1=new PetShop();<br>
-ps1.searPet(&quot;小澳子&quot;);<br>
-}<br>
-}</p>
-</blockquote>
+<p>游戏本系列</p>
+<p>联想 拯救者 R7000<br>
+主要配置：R5-4500H/GTX 1650/160G DDR4/512G SSD<br>
+优点：散热表现好，性能释放优秀<br>
+缺点：没有高刷新率屏幕<br>
+价格：￥5688（学生价）<br>
+京东：https://u.jd.com/QrpdcH</p>
+<p>宏碁 暗影骑士·擎<br>
+主要配置：i5-10300H/GTX 1650-4G电竞版/8G DDR4/512G SSD<br>
+优点：可拓展性好，高色域电竞屏幕<br>
+缺点：预装的M.2硬盘距离南桥较近<br>
+价格：￥5499（满3000减300后价格）<br>
+京东：<br>
+https://u.jd.com/0R7wAa（满3000减300优惠券链接）<br>
+https://u.jd.com/IPBfmU（优惠下单链接）</p>
+<p>机械革命 蛟龙<br>
+主要配置：R7-4800H/RTX 2060/1G DDR4/512G PCIE/144Hz屏<br>
+优点：高色域高刷新率屏幕<br>
+缺点：高负载下表面温度较高，空出SATA硬盘位无法升级<br>
+价格：￥7187（满5000减600后价格）<br>
+京东：<br>
+https://u.jd.com/W1xSXt（满3000减300优惠券链接）<br>
+https://u.jd.com/xXgxAY（优惠下单链接）</p>
+<p>华硕 天选<br>
+主要配置：R7-4800H/RTX 2060/8G DDR4/512G SSD<br>
+优点：性价比很高，首发CPU性能很强<br>
+缺点：电竞屏为低色域屏幕，使用QLC固态<br>
+价格：￥7099（学生价）<br>
+京东：https://u.jd.com/Gz8uCN</p>
+<p>ROG（玩家国度） 魔霸新锐<br>
+主要配置：i7-10875H/RTX 2060/16G DDR4/512G SSD<br>
+优点：散热较好，首发优秀价格<br>
+缺点：采用QLC固态硬盘，无摄像头<br>
+价格：￥9699<br>
+京东：https://u.jd.com/ewjAiZ</p>
+<p>万元本 惠普 暗影精灵6 Plus<br>
+优点：一线品牌中，性价比最高的RTX2080 Super游戏本<br>
+缺点：半高方向键<br>
+京东：https://u.jd.com/yFrdnH</p>
+<p>万元本 微星 绝影2 GS66<br>
+优点：电池大，散热好<br>
+缺点：便携性在游戏本中比较差<br>
+京东：https://u.jd.com/YAfBM2</p>
+<p>万元本 微星 强袭2 GE66<br>
+优点：电池大，性能释放比上者更好<br>
+缺点：散热较差，便携性比上者更差<br>
+京东：<br>
+https://u.jd.com/02gnAS（10元优惠链接）<br>
+https://u.jd.com/seZ8FN（优惠下单链接）</p>
+<p>万元本 技嘉 Aorus 15G<br>
+优点：温度控制较好，键盘键程较长<br>
+缺点：机身较厚<br>
+京东：https://u.jd.com/M1QTKI</p>
+<p>万元本 华硕 玩家国度 枪神4 Plus<br>
+优点：屏幕素质好，散热表现好<br>
+缺点：不支持MUX显卡切换，无摄像头<br>
+京东：<br>
+https://u.jd.com/aQruz3（30元优惠链接）<br>
+https://u.jd.com/ZvpEVj（优惠下单链接）</p>
 
                                 </div>
                     </article>
@@ -220,9 +187,9 @@ ps1.searPet(&quot;小澳子&quot;);<br>
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://chenhuaibo.xyz/post/chenhuaibos-blog-zheng-shi-shang-xian/">
+                            <a href="https://chenhuaibo.xyz/post/li-yong-teng-xun-yun-han-shu-scf-shi-xian-wps-zi-dong-da-qia/">
                                 <h3 class="post-title">
-                                    ChenHuaibo&#39;s Blog 正式上线
+                                    利用腾讯云函数SCF实现WPS自动打卡
                                 </h3>
                             </a>
                         </div>
